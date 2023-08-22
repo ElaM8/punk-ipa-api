@@ -19,7 +19,7 @@ const getData = async () => {
 
 return (
     <>
-    <Navbar/>
+    <Navbar ipas={ipas}/>
     <h1>Punk API</h1>
     <Main ipas={ipas}/>
     
