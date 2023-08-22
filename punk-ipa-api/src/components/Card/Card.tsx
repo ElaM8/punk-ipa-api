@@ -13,7 +13,7 @@ const Card = ({ ipas }: CardProps) => {
     <>
 {ipas.map((ipa) => {
   return (
-    <div>
+    <div key={ipa.id}>
       <img src={ipa.image_url} alt="" />
       <h2>{ipa.name}</h2>
       <p>{ipa.description}</p>

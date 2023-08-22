@@ -9,11 +9,9 @@ const CardList = ( { ipas }: CardListProps) => {
 
   return (
     <>
-{ipas.map((ipa) => {
+{ipas.map((ipa, i) => {
   return (
-    <>
-  <Card ipas={ipas}/>
-  </>
+  <Card key={i} ipas={ipas}/>
   )
 })}
     </>
