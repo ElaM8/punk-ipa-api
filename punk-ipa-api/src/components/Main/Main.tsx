@@ -6,7 +6,6 @@ type MainProps = {
 }
 
 const Main = ( { ipas }: MainProps) => {
-
 return (
     <>
     <CardList ipas={ipas}></CardList>
