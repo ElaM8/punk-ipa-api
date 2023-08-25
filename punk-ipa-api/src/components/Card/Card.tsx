@@ -1,6 +1,5 @@
 import './Card.scss'
 import { Ipa } from '../../types/Ipa'
-import CheckedIpa from '../../types/CheckedIpa';
 
 type CardProps = {
   ipas: Ipa[]

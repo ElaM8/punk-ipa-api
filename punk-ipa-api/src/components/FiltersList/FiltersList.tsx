@@ -11,14 +11,14 @@ const FiltersList = ( { filteredByNameIpas, checkedIpas }: FiltersListProps) => 
   return (
     <>
     <h2>FiltersList</h2>
-    {filteredByNameIpas.map((ipa, i) => {
+    {filteredByNameIpas.map((ipa) => {
   return (
-  <Card key={i} ipas={filteredByNameIpas}/>
+  <Card key={ipa.id} ipas={filteredByNameIpas}/>
   )}
     )}
-    {checkedIpas.map((ipa, i) => {
+    {checkedIpas.map((ipa) => {
   return (
-  <Card key={i} ipas={checkedIpas}/>
+  <Card key={ipa.id} ipas={checkedIpas}/>
   )}
     )}
   </>

@@ -1,5 +1,5 @@
 import './Navbar.scss'
-import { useState, FormEventHandler, FormEvent, ChangeEvent } from 'react'
+import { useState, FormEvent, ChangeEvent } from 'react'
 import SearchBox from '../SearchBox/SearchBox'
 import FiltersList from '../FiltersList/FiltersList'
 import { Ipa } from '../../types/Ipa'
