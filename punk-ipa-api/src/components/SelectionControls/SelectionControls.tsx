@@ -1,18 +1,19 @@
 import { useState, FormEvent, ChangeEventHandler } from "react";
 
 type SelectionControlsProps = {
-  name: {};
-  checked: boolean;
+  options: {};
   onChange: ChangeEventHandler<HTMLInputElement>;
 }
 
-const SelectionControls = ({ name, checked, onChange }: SelectionControlsProps) => {
+const SelectionControls = ({ options, onChange }: SelectionControlsProps) => {
 
   return (
     <div className="selection-controls__checkbox-container">
-      <input type="checkbox" name={"highAlcohol"} checked={checked} onChange={onChange}/>
-      <input type="checkbox" name={"classicRange"} checked={checked} onChange={onChange}/>
-      <input type="checkbox" name={"highAcidity"} checked={checked} onChange={onChange}/>
+      {/* {Object.keys(options).map((o) => 
+      console.log(o))} */}
+      <label><input type="checkbox" name={"highAlcohol"} onChange={onChange}/>High Alcohol</label>
+      <label><input type="checkbox" name={"classicRange"} onChange={onChange}/>Classic Range</label>
+      <label><input type="checkbox" name={"highAcidity"} onChange={onChange}/>High Acidity</label>
     </div>
     
   );
