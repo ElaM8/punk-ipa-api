@@ -1,27 +1,20 @@
 import './Card.scss'
-import { Ipa } from '../../types/Ipa'
 
 type CardProps = {
-  ipas: Ipa[]
+  image_url: string;
+  name: string;
+  description: string;
 };
 
-
-
-const Card = ({ ipas }: CardProps) => {
+const Card = ( { image_url, name, description }: CardProps) => {
 
   return (
-    <>
-{ipas.map((ipa) => {
-  return (
 
-    <div className='card--ipa' key={ipa.id}>
-      <img src={ipa.image_url} alt="" />
-      <h2>{ipa.name}</h2>
-      <p>{ipa.description}</p>
+    <div className='ipa-card'>
+      <img className='ipa-card__image' src={image_url} alt="" />
+      <h2 className='ipa-card__name' >{name}</h2>
+      <p className='ipa-card__description' >{description}</p>
     </div>
-  )
-})}
-    </>
   )
 }
 
