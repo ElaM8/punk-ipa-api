@@ -1,12 +1,10 @@
-import CheckedIpa from "../../types/CheckedIpa";
 import { Ipa } from "../../types/Ipa";
 import Card from "../Card/Card";
 
 type FiltersListProps = {
   filteredByNameIpas: Ipa[];
-  checkedIpas: CheckedIpa[];
 }
-const FiltersList = ( { filteredByNameIpas, checkedIpas }: FiltersListProps) => {
+const FiltersList = ( { filteredByNameIpas }: FiltersListProps) => {
 
   return (
     <>
@@ -14,11 +12,6 @@ const FiltersList = ( { filteredByNameIpas, checkedIpas }: FiltersListProps) => 
     {filteredByNameIpas.map((ipa) => {
   return (
   <Card key={ipa.id} ipas={filteredByNameIpas}/>
-  )}
-    )}
-    {checkedIpas.map((ipa) => {
-  return (
-  <Card key={ipa.id} ipas={checkedIpas}/>
   )}
     )}
   </>

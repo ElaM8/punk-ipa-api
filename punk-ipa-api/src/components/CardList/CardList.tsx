@@ -13,8 +13,12 @@ const CardList = ( { ipas }: CardListProps) => {
     <div className="card-container__card-list">
 {ipas.map((ipa) => {
   return (
-  <Card key={ipa.id} ipas={ipas}/>
-  )
+  <Card 
+    key={ipa.id} 
+    image_url={ipa.image_url} 
+    name={ipa.name} 
+    description={ipa.description}
+    />)
 })}
 </div>
     </>
